@@ -32,10 +32,10 @@ export function Subscribe() {
                     <Logo />
 
                     <h1 className="mt-8 text-[2.5rem] leading-tight">
-                        Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
+                        Prepare-se para <strong className="text-blue-600">falar inglês</strong>, do zero, em <strong className="text-blue-600">2022</strong>
                     </h1>
                     <p className="mt-4 text-gray-200 leading-relaxed">
-                        Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
+                        Em apenas uma semana você vai participar de uma experiência de imersão cultural instigante, ajudando você a pensar em inglês e tornando seu aprendizado muito mais fácil.
                     </p>
                 </div>
                 <div className="p-8 bg-gray-700 border border-gray-500 rounded">
@@ -60,7 +60,7 @@ export function Subscribe() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                            className="mt-4 bg-green-700 uppercase py-4 rounded font-bold text-sm hover:bg-green-500 transition-colors disabled:opacity-50"
                         >
                             Garantir minha vaga
                         </button>
@@ -68,7 +68,7 @@ export function Subscribe() {
                 </div>
             </div>
 
-            <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+            <img src="/src/assets/mockup-students.png" className="mt-10" alt="" />
         </div>
     )
 }

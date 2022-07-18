@@ -14,17 +14,21 @@ module.exports = {
       colors: {
         green: {
           300: '#00B37E',
-          500: '#00875F',
-          700: '#015F43'
+          500: '#03a63e',
+          700: '#038532'
         },
         blue: {
           500: '#81D8F7',
+          600: '#29cafd'
         },
         orange: {
           500: '#FBA94C',
         },
         red: {
           500: '#F75A68'
+        },
+        purple: {
+          600: '#a436fe'
         },
         gray: {
           100: '#E1E1E6',
@@ -40,7 +44,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-
-// #29cafd
-// #a436fe

@@ -1,5 +1,5 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
-import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
+import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosphor-react";
 
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from "../graphql/graphql-generate";
@@ -59,12 +59,12 @@ export function Video(props: VideoProps) {
                         )}
                     </div>
                     <div className="flex flex-col gap-4">
-                        <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+                        <a href="" className="p-4 text-sm bg-green-700 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-500 transition-colors">
                             <DiscordLogo size={24} />
                             Comunidade do Discord
                         </a>
 
-                        <a href="" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+                        <a href="" className="p-4 text-sm border border-blue-600 text-blue-600 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-600 hover:text-gray-900 transition-colors">
                             <Lightning size={24} />
                             Acesse o desafio
                         </a>
@@ -72,7 +72,7 @@ export function Video(props: VideoProps) {
                 </div>
                 <div className="gap-8 mt-20 grid grid-cols-2">
                     <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-                        <div className="bg-green-700  h-full p-6 flex items-center">
+                        <div className="bg-purple-600  h-full p-6 flex items-center">
                             <FileArrowDown size={40} />
                         </div>
                         <div className="py-6 leading-relaxed">
@@ -87,8 +87,8 @@ export function Video(props: VideoProps) {
                     </a>
 
                     <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-                        <div className="bg-green-700  h-full p-6 flex items-center">
-                            <FileArrowDown size={40} />
+                        <div className="bg-purple-600  h-full p-6 flex items-center">
+                            <Image size={40} />
                         </div>
                         <div className="py-6 leading-relaxed">
                             <strong className="text-2xl">Wallpapers exclusivos</strong>
