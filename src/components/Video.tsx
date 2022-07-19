@@ -1,8 +1,10 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
-import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosphor-react";
+import { CaretRight, CircleNotch, FileArrowDown, Image } from "phosphor-react";
 
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from "../graphql/graphql-generate";
+import { ButtonDiscordCommunity } from "./Buttons/ButtonDiscordCommunity";
+import { ButtonChallenges } from "./Buttons/ButtonChallenges";
 interface VideoProps {
     lessonSlug: string
 }
@@ -17,8 +19,8 @@ export function Video(props: VideoProps) {
 
     if (!data || !data.lesson) {
         return (
-            <div className="flex-1">
-                <p>Carregando...</p>
+            <div className="flex-1 flex items-center justify-center">
+                <CircleNotch className="animate-spin text-purple-600" size={50}/>
             </div>
         )
     }
@@ -59,15 +61,8 @@ export function Video(props: VideoProps) {
                         )}
                     </div>
                     <div className="flex flex-col gap-4">
-                        <a href="" className="p-4 text-sm bg-green-700 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-500 transition-colors">
-                            <DiscordLogo size={24} />
-                            Comunidade do Discord
-                        </a>
-
-                        <a href="" className="p-4 text-sm border border-blue-600 text-blue-600 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-600 hover:text-gray-900 transition-colors">
-                            <Lightning size={24} />
-                            Acesse o desafio
-                        </a>
+                        <ButtonDiscordCommunity />
+                        <ButtonChallenges />
                     </div>
                 </div>
                 <div className="gap-8 mt-20 grid grid-cols-2">
@@ -106,6 +101,4 @@ export function Video(props: VideoProps) {
     )
 }
 
-//DESAFIO - CRIAR UM COMPONENTE DE BOTÃO PARA NÃO FICAR REPETINDO CLASSES
 //FAZER RESPONSIVO FUTURAMENTE
-//ESTILIZAR O CARRENDO
