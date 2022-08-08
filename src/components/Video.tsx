@@ -1,10 +1,10 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, CircleNotch, FileArrowDown, Image } from "phosphor-react";
 
-import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from "../graphql/graphql-generate";
 import { ButtonDiscordCommunity } from "./Buttons/ButtonDiscordCommunity";
 import { ButtonChallenges } from "./Buttons/ButtonChallenges";
+import '@vime/core/themes/default.css'
 interface VideoProps {
     lessonSlug: string
 }
@@ -49,7 +49,7 @@ export function Video(props: VideoProps) {
                         {data.lesson.teacher && (
                             <div className="flex items-center gap-4 mt-6">
                                 <img
-                                    className="h-16 w-16 rounded-full border-2 border-blue-500"
+                                    className="h-16 w-16 rounded-full border-2 border-gray-600"
                                     src={data.lesson.teacher.avatarURL}
                                     alt="" />
 
@@ -100,5 +100,3 @@ export function Video(props: VideoProps) {
         </div>
     )
 }
-
-//FAZER RESPONSIVO FUTURAMENTE

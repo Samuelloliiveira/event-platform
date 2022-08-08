@@ -20,5 +20,4 @@ export function Event() {
     )
 }
 
-
 //DESAFIO - Carregar a primeira aula quando não passar nenhum slog ou algum placeholder(aviso)
